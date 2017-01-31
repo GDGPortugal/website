@@ -7,7 +7,7 @@ description: |
   
 owner: GDGPortugal # or company name
 first_published: 2017 # if migrating another site, the year of your first publish
-email: your-email@domain.com
+email: gdgportugal@googlegroups.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://gdgportugal.xyz" # the base hostname & protocol for your site
 social:
@@ -16,7 +16,7 @@ social:
   #linkedin-square: https://linkedin.com/in/
   facebook-official: https://facebook.com/GDGPortugal
   #google-plus-square: https://plus.google.com/u/0/+<username>
-  #email: /contact/
+  #email: gdgportugal@googlegroups.com
   #flickr:
   #instagram:
   #youtube-square:
