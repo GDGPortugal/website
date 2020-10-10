@@ -9,7 +9,7 @@ owner: GDGPortugal # or company name
 first_published: 2017 # if migrating another site, the year of your first publish
 email: gdgportugal@googlegroups.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://gdgportugal.xyz" # the base hostname & protocol for your site
+url: "https://gdgportugal.xyz" # the base hostname & protocol for your site
 social:
   #twitter: https://twitter.com/
   github: https://github.com/GDGPortugal
