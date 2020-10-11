@@ -48,7 +48,7 @@ jekyll serve -w
 
 ### with Docker compose
 
-[Install Docker compose](https://docs.docker.com/compose/install/){target=_blank}
+[Install Docker compose](https://docs.docker.com/compose/install/)
 
 then run:
 
