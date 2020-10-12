@@ -59,6 +59,23 @@ docker-compose up
 Open http://127.0.0.1:4000
 
 
+## How to build
+
+### with Ruby
+
+Run
+
+```
+jekyll build
+```
+
+### with Docker compose
+
+Run
+```
+docker-compose run jekyll jekyll build
+```
+
 ## Contact
 
 Reach out to your nearest GDG to give an helping and or participate in our meetups!
