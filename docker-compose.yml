@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  jekyll:
+    build: .
+    restart: always
+    image: jekyll/jekyll:latest
+    volumes:
+      - .:/srv/jekyll
+    ports:
+      - 4000:4000
+    command: jekyll serve --watch --force_polling --verbose
