@@ -31,6 +31,15 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Organizer Info
+organizerName: "GDG Portugal"
+organizerAlternateName: "Google Developer Group Portugal"
+organizerDescription: "A Google Developers Group, mais conhecida como GDG, é uma iniciativa promovida pela Google que pretende ser um mecanismo para a criação de comunidades locais, cujo principal objectivo é difundir conhecimento tecnológico e não tecnológico pelos seus membros.Promovemos um ambiente inclusivo, uma vez que qualquer pessoa interessada por tecnologia são bem-vindos a participar. Neste momento, existem mais de 10 GDGs diferentes espalhadas por Portugal, todas estas com a mesma nobre missão."
+organizerEmail: "gdgportugal@googlegroups.com"
+organizerLogo: "/images/organizer-logo.png"
+organizerLink: "https://gdgportugal.xyz/"
+facebookAppId: "638759390345238"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
