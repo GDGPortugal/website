@@ -1,20 +1,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title |
+    escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt |
+    strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description
+    }}{% endif %}">
   <!--[if lte IE 8]><script src="{{ "/js/ie/html5shiv.js" | prepend: site.baseurl }}"></script><![endif]-->
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend:
+    site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="{{"/css/main.css" | prepend: site.baseurl }}" />
   <!--[if lte IE 8]><link rel="stylesheet" href="{{ "/css/ie8.css" | prepend: site.baseurl }}" /><![endif]-->
   <!--[if lte IE 9]><link rel="stylesheet" href="{{ "/css/ie9.css" | prepend: site.baseurl }}" /><![endif]-->
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
+    href="{{"/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <!-- Social: Facebook / Open Graph -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" /> 
-  <meta property="og:site_name" content="{{ site.title }}" /> 
-  <meta property="og:type" content="website" /> 
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else
+    %}{{ site.title }}{% endif %}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ site.url }}" />
-  <meta property="og:image" content="{{ site.socialImageSrcFacebook | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:image" content="{{ site.socialImageSrcFacebook | prepend:
+    site.baseurl | prepend: site.url }}" />
   <meta property="og:description" content="{{ site.description }}" />
-  <meta property="fb:app_id" content="{{ site.facebookAppId }}"/> 
+  <meta property="fb:app_id" content="{{ site.facebookAppId }}" />
+
+  <!-- HTML Meta Tags -->
+  <title>Google Developer Group Portugal</title>
+  <meta name="description" content="Directório de todas as GDGs de Portugal">
+  <!-- Google / Search Engine Tags -->
+  <meta itemprop="name" content="Google Developer Group Portugal">
+  <meta itemprop="description" content="Directório de todas as GDGs de
+    Portugal">
+  <meta itemprop="image" content="https://i.imgur.com/10b2aW6.png">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://gdgportugal.xyz">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Google Developer Group Portugal">
+  <meta property="og:description" content="Directório de todas as GDGs de
+    Portugal">
+  <meta property="og:image" content="https://i.imgur.com/10b2aW6.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Google Developer Group Portugal">
+  <meta name="twitter:description" content="Directório de todas as GDGs de
+    Portugal">
+  <meta name="twitter:image" content="https://i.imgur.com/10b2aW6.png">
+
+  <!-- Meta Tags Generated via http://heymeta.com -->
 </head>
