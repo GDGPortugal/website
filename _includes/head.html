@@ -4,7 +4,7 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title |
     escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt |
-    strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description
+    strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.organizerDescription
     }}{% endif %}">
   <!--[if lte IE 8]><script src="{{ "/js/ie/html5shiv.js" | prepend: site.baseurl }}"></script><![endif]-->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend:
@@ -21,34 +21,23 @@
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ site.url }}" />
-  <meta property="og:image" content="{{ site.socialImageSrcFacebook | prepend:
-    site.baseurl | prepend: site.url }}" />
-  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:image" content="{{ site.socialImageSrcFacebook }}" />
+  <meta property="og:description" content="{{ site.organizerDescription }}" />
   <meta property="fb:app_id" content="{{ site.facebookAppId }}" />
 
   <!-- HTML Meta Tags -->
   <title>Google Developer Group Portugal</title>
-  <meta name="description" content="Directório de todas as GDGs de Portugal">
+  <meta name="description" content="{{ site.organizerDescription }}">
   <!-- Google / Search Engine Tags -->
-  <meta itemprop="name" content="Google Developer Group Portugal">
-  <meta itemprop="description" content="Directório de todas as GDGs de
-    Portugal">
-  <meta itemprop="image" content="https://i.imgur.com/10b2aW6.png">
-
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://gdgportugal.xyz">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Google Developer Group Portugal">
-  <meta property="og:description" content="Directório de todas as GDGs de
-    Portugal">
-  <meta property="og:image" content="https://i.imgur.com/10b2aW6.png">
+  <meta itemprop="name" content="{{ site.title }}">
+  <meta itemprop="description" content="{{ site.organizerDescription }}">
+  <meta itemprop="image" content="{{ site.socialImageSrcFacebook }}">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Google Developer Group Portugal">
-  <meta name="twitter:description" content="Directório de todas as GDGs de
-    Portugal">
-  <meta name="twitter:image" content="https://i.imgur.com/10b2aW6.png">
+  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:description" content="{{ site.organizerDescription }}">
+  <meta name="twitter:image" content="{{ site.socialImageSrcFacebook }}">
 
   <!-- Meta Tags Generated via http://heymeta.com -->
 </head>
